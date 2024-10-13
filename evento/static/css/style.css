@@ -1,0 +1,584 @@
+@font-face {
+    font-family: 'BrittanySignature';
+    src: url('../fonts/BrittanySignature.ttf') format('truetype');
+}
+
+
+@font-face {
+    font-family: 'OpenSauceSans-Regular';
+    src: url('../fonts/OpenSauceSans-Regular.ttf') format('truetype');
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'OpenSauceSans-Regular';
+}
+
+.big-padding-top {
+    padding-top: 60px
+}
+
+.heart {
+    display:none;
+}
+.background {
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5B6C68;
+    
+}
+
+.overlay {
+    background-color: #D7DECC;
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+    width: 80%;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #688272;
+}
+
+.main-title {
+    font-family: 'BrittanySignature';
+    font-size: 60px;
+}
+
+.important-title {
+    font-family: 'BrittanySignature';
+    font-size: 50px;
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+
+#countdown {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    font-size: 1.5rem;
+}
+
+#countdown div {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 10px;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    color: #688272;
+    .cd-number {
+        font-size: 50px;
+        
+    }
+}
+
+footer {
+    margin-top: 40px;
+}
+
+a {
+    color: #688272;
+    text-decoration: none;
+}
+
+
+.contdown {
+    padding: 40px;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.1);
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 5%;
+  }
+
+#contdown-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.parchi {
+    width: 100%;
+}
+
+.parchi img {
+    max-width: 100%;
+}
+
+.date-container {
+    padding: 60px;
+    color: #688272;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    font-size: 30px;
+}
+
+.date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.bordered {
+    border-top: 1px solid #688272;
+    border-bottom: 1px solid #688272;
+    padding: 10px 0;    
+}
+
+
+.number {
+    font-size: 80px;
+    padding: 10px 20px;
+}
+
+/* Sezione del programma */
+.programma-della-giornata {
+    background-color: #D7DECC;
+    text-align: center;
+    h2 {
+        padding: 40px;
+    }
+}
+
+.important-title {
+    font-size: 2.5em; /* Titolo principale */
+    color: #4C5E4F;
+    margin-bottom: 30px;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.card {
+    background-color: #E6ECE1;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 80%;
+    max-width: 500px;
+    opacity: 0;  /* Inizia nascosta */
+    transform: translateY(50px);  /* Spostamento iniziale verso il basso */
+    transition: all 0.6s ease-out;
+    text-align: center;
+}
+
+/* Animazione per mostrare la card */
+.card.show {
+    opacity: 1;
+    transform: translateY(0);  /* Torna alla posizione originale */
+}
+
+/* Stile per titolo */
+.card h3 {
+    font-size: 1.8em; /* Dimensione più grande per i titoli */
+    margin-bottom: 20px;
+    color: #4C5E4F;
+}
+
+/* Stile per le icone */
+.card i {
+    font-size: 2em; /* Dimensione dell'icona */
+    color: #688272; /* Colore simile al testo */
+    margin-bottom: 20px; /* Spazio tra l'icona e l'orario */
+}
+
+/* Stile per l'orario */
+.time {
+    font-size: 1.2em; /* Font-size per l'orario */
+    color: #526C59;
+    margin-bottom: 20px;
+    display: block;
+}
+
+/* Stile per il testo descrittivo */
+.card p {
+    color: #526C59;
+    font-size: 1em;
+}
+
+/* Stile per i link */
+.card a {
+    color: #688272;
+    text-decoration: underline;
+}
+
+.card a:hover {
+    text-decoration: none;
+}
+
+
+img.castello {
+    border-radius: 50%;
+    padding: 40px;
+    scale: 0.9;
+}
+
+.phrase-container {
+    padding: 40px;
+    text-align: center;
+    font-size: 25px;
+    color: #688272;
+    font-style: italic;
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    max-width: 80%; /* Full width container */
+    margin: auto;
+    overflow: hidden; /* Hide overflow to avoid showing multiple images */
+}
+
+/* Hide all slides by default */
+.slides {
+    display: none;
+}
+
+/* Fade effect for the slideshow */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+/* Ensure all images have the same width and maintain aspect ratio */
+.slides img {
+    width: 100%; /* Make all images take 100% of the container's width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5%;
+}
+
+@keyframes fade {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
+}
+
+
+.cc-container{
+    padding: 50px;
+    h2 {
+        padding-bottom: 50px;
+    }
+}
+
+.spacer {
+    padding-top: 40px;
+}
+
+.padding-icon{
+    padding: 10px;
+}
+
+.card-text-container{
+    margin: 5% 10%;
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 60px;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #E6ECE1;
+    margin: 5% auto;
+    padding: 25px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10%;
+    color: #688272;
+    h2 {
+        padding: 20px 0px;
+        text-align: center;
+    }
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Button styles */
+  button {
+    padding: 10px 20px;
+    background-color: #688272;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #556b59;
+  }
+  
+  .text-overlay{
+    display: none;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: initial;
+}
+
+  @media (max-width: 600px) {
+    img.castello {
+        padding: 0;
+        max-width: 100%;
+    }
+    .bordered {
+        background-color: #D7DECC;
+        z-index: 1;
+    }
+
+    .overlay {
+        padding: 0;
+        width: 100%;
+    }
+    .main-image-container img {
+        width: 100%;
+        padding-top: 0;
+        height: 780px;
+    }
+    .main-image-container {
+        width: 100%;
+    }
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .slideshow-container {
+        max-width: 100%;
+    }
+    .cc-container {
+        padding: 0;
+        img {
+            max-width: 100%;
+        }
+        h2 {
+            font-size: 18px;
+
+        }
+        .phrase-container {
+            padding: 16px;
+        }
+    }
+    .spacer {
+        padding: 0px;
+    }
+
+    .main-title {
+        display: none;
+    }
+    .phrase-container {
+        padding: 20px;
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 25px;
+        margin-bottom:0px;
+    }
+
+    .programma-della-giornata {
+        margin-bottom: 60px;
+    }
+
+    .main-image-container {
+        position: relative;
+        display: inline-block;
+        overflow: hidden; /* Ensures the image stays within the container */
+    }
+    
+    .text-overlay {
+        position: relative;
+        top: -50%; /* Start the image outside the viewport from the top */
+        animation: slide-in 2s ease forwards; /* Slide it in over 2 seconds */
+    }
+    
+    /* Animation keyframes */
+    @keyframes slide-in {
+        to {
+            top: 10%; /* End position */
+        }
+    }
+
+    .date-block {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .text-overlay {
+        position: absolute;
+        left: 16%;
+        color: white;
+        font-size: 40px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        display: block;
+        font-family: 'BrittanySignature';
+    }
+
+    .card h3 {
+        font-size: 30px;
+    }
+
+    .date-container {
+        padding: 30px;
+        font-size: 20px;
+        .bordered {
+            width: 100px;
+        }
+    }
+
+    p {
+        margin: 10px 0px;
+    }
+
+    .date-container {
+        position: relative;
+        padding-bottom:80px;
+        img {
+            position: absolute;
+            scale: 0.43;
+            display: block;
+            opacity: 0.7;
+        }
+    }
+
+    .suggestion {
+        i:first-child {
+            padding-left: 0px;
+            padding-right: 5px;
+
+        }
+        i:last-child {
+            padding-left: 5px;
+            padding-right: 0px;
+        }
+    }
+
+    .suggestion p:first-child {
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    .suggestion p:last-child {
+        padding: 5px 20px;
+    }
+
+    .contdown {
+        position: relative;
+        width: 100%;
+        padding: 40px 20px;
+        border-radius: 0px;
+        div {
+            display: flex;
+            flex-direction: column;
+            width: 15% !important;
+        }
+        .cd-number {
+            font-size: 26px !important;
+            padding: 10px 0px;
+        }
+        .cd-date {
+            font-size: 14px !important;
+        }
+        font-size: 20px !important;
+    }    
+
+}  
+
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+label {
+    width: 100px; /* Ensures labels are the same width */
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+input[type="text"] {
+    width: 250px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #66afe9;
+    outline: none;
+}
+
+.button-container {
+    text-align: center;
+    width: 100%;
+}

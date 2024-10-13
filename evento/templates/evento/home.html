@@ -1,0 +1,266 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marika & Giorgio - Save the Date</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/fonts.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+</head>
+<body>
+    <div class="background">
+        <div class="overlay">
+            <h1 class="main-title">Marika & Giorgio</h1>
+            <div class="main-image-container">
+                <img class="big-padding-top mobile" src="{% static 'evento/images/background_mobile.jpeg' %}" alt="stelle">
+                <img class="big-padding-top desktop" src="{% static 'evento/images/background.jpeg' %}" alt="stelle">
+                <div class="text-overlay">Marika & Giorgio</div>
+            </div>
+            <div class="date-block">
+            <h2 class="important-title big-padding-top">Save the Date</h2> 
+            <div class="date-container">
+                <img src="{% static 'evento/images/cuore.png' %}" alt="contdown" class="heart">
+                <div class="bordered">SABATO</div>
+                    <div class="date">
+                        <div>GIUGNO</div>
+                        <div class="number">7</div>
+                        <div>2025</div>
+                    </div>
+                <div class="bordered">ORE 10.30</div>
+            </div>
+
+            <div id="contdown-container">
+                <div id="countdown", class="contdown">
+                    
+                    <div><span id="days" class="cd-number"></span> <span class="cd-date">giorni</span></div>
+                    <div><span id="hours" class="cd-number"></span> <span class="cd-date">ore</span></div>
+                    <div><span id="minutes" class="cd-number"></span> <span class="cd-date">minuti</span></div>
+                    <div><span id="seconds" class="cd-number"></span> <span class="cd-date">secondi</span></div>
+                </div>
+            </div>
+
+            </div>
+            <h2 class="important-title big-padding-top">Ciao a Tutti!</h2>
+            <div class="phrase-container"><p>Manca sempre meno al grande giorno</p><p>e noi siamo (quasi) pronti.</p></div>
+            <div class="phrase-container"><p>Dopo 10 anni di fidanzamento</p><p>abbiamo deciso di coronare il nostro sogno</p><p>e non vediamo l’ora di condividerlo con voi.</p></div>
+            <div class="phrase-container"><p>La giornata si svolgerà interamente a </p><p><a href="https://maps.app.goo.gl/yMPJLRAzKFHqCeB99"><strong>Castel Pietra, Calliano (TN)</strong></a></p>
+            <div class="image-container"><a href="https://maps.app.goo.gl/yMPJLRAzKFHqCeB99"><img class="castello" src="{% static 'evento/images/castello.jpg' %}" alt="castello"></a></div>
+            
+            <section id="programma" class="programma-della-giornata">
+                <h2 class="important-title  big-padding-top">Programma della giornata</h2>
+                <div class="spacer"></div>
+
+                <div class="card-container">
+            
+                    <div class="card">
+                        <h3>Cerimonia</h3>
+                        <i class="fas fa-church"></i>  <!-- Icona della cerimonia -->
+                        <span class="time">Ore 10:30</span>
+                        <div class="card-text-container">
+                        <p>Hai piacere di condividere un pensiero, un racconto o di dedicarci una frase?</p><p>Ti chiediamo di avvisarci così da poterti dedicare un                          
+                            momento durante la cerimonia.</p></div>
+                    </div>
+            
+                    <div class="card">
+                        <h3>Aperitivo</h3>
+                        <i class="fas fa-glass-cheers"></i>  <!-- Icona dell'aperitivo -->
+                        <span class="time">Ore 12:00</span>
+                        <p>Hai allergie? <a href="allergyModalLink">Clicca qui</a></p>
+                    </div>
+            
+                    <div class="card">
+                        <h3>Pranzo</h3>
+                        <i class="fas fa-utensils"></i>  <!-- Icona del pranzo -->
+                        <span class="time">Ore 13:30</span>
+                    </div>
+            
+                    <div class="card">
+                        <h3>Taglio della torta</h3>
+                        <i class="fas fa-birthday-cake"></i>  <!-- Icona del taglio della torta -->
+                        <span class="time">Ore 18:00</span>
+                    </div>
+            
+                    <div class="card">
+                        <h3>La festa</h3>
+                        <i class="fas fa-music"></i>  <!-- Icona della festa -->
+                        <span class="time">Ore 20:00</span>
+                    </div>
+                    
+                </div>
+            </section>
+            
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+
+            <h2>DRESS CODE? NO, GRAZIE!</h2>
+            <div class="phrase-container"><p>Non è bello ciò che è bello,</p><p>ma è bello ciò che piace.</p><p>Vestitevi come preferite,</p><p>unico accessorio indispensabile:</p><p style="font-weight: bold;">il vostro sorriso.</p></div>
+            <div class="spacer"></div>
+            <div class="phrase-container suggestion"><p><i class="fas fa-exclamation-triangle padding-icon"></i>Consiglio per ragazze e signore<i class="fas fa-exclamation-triangle padding-icon"></i></p>
+                <p>al Castello la pavimentazione è un po’ irregolare e i tacchi a spillo potrebbero risultare scomodi o più instabili.Ti consigliamo un tacco largo o più basso.</p>
+            </div>
+            
+            <div class="spacer"></div>
+
+            <div class="phrase-container"><p>Porteremo un pezzo di ciascuno di voi nel nostro cuore</p><p>mentre esploreremo nuovi orizzonti.</p></div>
+            <div class="spacer"></div>
+
+            <div class="slideshow-container">
+                <div class="slides fade">
+                    <img src="{% static 'evento/images/parchi1.jpg' %}" alt="parchi1">
+                </div>
+                <div class="slides fade">
+                    <img src="{% static 'evento/images/parchi2.jpg' %}" alt="parchi2">
+                </div>
+                <div class="slides fade">
+                    <img src="{% static 'evento/images/parchi3.jpg' %}" alt="parchi3">
+                </div>
+            </div>
+
+            
+            <div class="cc-container">
+                <div class="phrase-container"><p>Se volete essere parte di questa meravigliosa avventura,</p><p>ecco come potete contribuire:</p></div>
+                <h2>IT 71 M 08016 01801 000031433383</h2>
+                <img src="{% static 'evento/images/banca.png' %}" alt="banca">
+            </div>
+
+        </div>
+    </div>
+    <!-- Modal structure -->
+    <div id="allergyModal" class="modal">
+        <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Segnalaci le tue allergie</h2>
+        <form id="allergyForm" action="{% url 'submit_allergy' %}" method="POST">
+            {% csrf_token %}
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required><br><br>
+            <label for="allergia">Allergia:</label>
+            <input type="text" id="allergia" name="allergia" required><br><br>
+            <div class="button-container">
+                <button type="submit">Invia</button>
+            </div>
+        </form>
+        </div>
+    </div>
+  
+    <script>
+        // Countdown script
+        const weddingDate = new Date("{{ wedding_date|date:'Y-m-d H:i:s' }}").getTime();
+        const countdown = setInterval(function() {
+            const now = new Date().getTime();
+            const distance = weddingDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("days").innerHTML = days;
+            document.getElementById("hours").innerHTML = hours;
+            document.getElementById("minutes").innerHTML = minutes;
+            document.getElementById("seconds").innerHTML = seconds;
+
+            if (distance < 0) {
+                clearInterval(countdown);
+                document.getElementById("countdown").innerHTML = "È il grande giorno!";
+            }
+        }, 1000);
+
+
+        // Seleziona tutte le cards
+        const cards = document.querySelectorAll('.card');
+
+        // Crea un Intersection Observer
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // Aggiungi la classe 'show' quando la card entra nella visuale
+                    entry.target.classList.add('show');
+                }
+            });
+        }, {
+            threshold: 0.1  // Attiva l'animazione quando almeno il 10% della card è visibile
+        });
+
+        // Applica l'osservatore a ciascuna card
+        cards.forEach(card => {
+            observer.observe(card);
+        });
+
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("slides");
+
+            // Hide all slides
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            // Increment slide index
+            slideIndex++;
+
+            // Reset to first slide if the index is greater than the number of slides
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+
+            // Display the current slide
+            slides[slideIndex - 1].style.display = "block";
+
+            // Change slide every 5 seconds (5000 ms)
+            setTimeout(showSlides, 5000);
+        }
+
+        // Get the modal
+        var modal = document.getElementById("allergyModal");
+
+        // Get the link that opens the modal
+        var allergyLink = document.querySelector("a[href='allergyModalLink']");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on the link, open the modal
+        allergyLink.onclick = function(event) {
+        event.preventDefault(); // Prevent the default link behavior
+        modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+        modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+        }
+
+        const h2 = document.querySelector(".cc-container h2");
+
+        h2.onclick = function() {
+        document.execCommand("copy");
+        }
+
+        h2.addEventListener("copy", function(event) {
+        event.preventDefault();
+        if (event.clipboardData) {
+            event.clipboardData.setData("text/plain", h2.textContent);
+            console.log(event.clipboardData.getData("text"))
+        }
+        });
+
+
+    </script>
+</body>
+</html>
