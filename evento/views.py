@@ -22,3 +22,8 @@ def submit_allergy(request):
 
     # If not POST, just redirect to the homepage
     return redirect('home')
+
+
+def allergie_view(request):
+    allergies = Allergy.objects.all()
+    return render(request, 'evento/allergies_list.html', {'allergies': allergies})
