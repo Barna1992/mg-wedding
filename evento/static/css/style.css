@@ -95,6 +95,9 @@ a {
     text-decoration: none;
 }
 
+.rings {
+    max-width: 70px;
+}
 
 .contdown {
     padding: 40px;
